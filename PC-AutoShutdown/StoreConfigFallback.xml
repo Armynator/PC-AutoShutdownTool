@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- StoreConfig.xml example -->
+
+<Stores>
+    <!-- Provide the name of the store as attribute -->
+    <Store name="Example Store">
+        <!-- Add 7 nodes under AutoShutdown, one for each day of the week -->
+        <AutoShutdown>
+            <!-- Node name doesn't matter, but keep time format as 00:00 -->
+            <!-- Also make sure that there are 7 nodes, one for each day of the week -->
+            <Sunday>19:05</Sunday>
+            <Monday>19:05</Monday>
+            <Tuesday>19:05</Tuesday>
+            <Wednesday>19:05</Wednesday>
+            <Thursday>19:05</Thursday>
+            <Friday>19:05</Friday>
+            <Saturday>19:05</Saturday>
+        </AutoShutdown>
+    </Store>
+
+    <!-- Another example store, same rules as above -->
+    <Store name="Example Store 2">
+        <AutoShutdown>
+            <Sunday>20:00</Sunday>
+            <Monday>21:00</Monday>
+            <Tuesday>21:00</Tuesday>
+            <Wednesday>18:00</Wednesday>
+            <Thursday>18:00</Thursday>
+            <Friday>16:00</Friday>
+            <Saturday>12:00</Saturday>
+        </AutoShutdown>
+    </Store>
+    
+</Stores>

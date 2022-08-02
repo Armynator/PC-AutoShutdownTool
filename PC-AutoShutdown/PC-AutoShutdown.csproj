@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <RootNamespace>PC_AutoShutdown</RootNamespace>
+        <Nullable>disable</Nullable>
+        <UseWPF>true</UseWPF>
+        <PublishReadyToRun>true</PublishReadyToRun>
+        <PublishSingleFile>true</PublishSingleFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="TaskScheduler" Version="2.10.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="StoreConfigFallback.xml" />
+      <EmbeddedResource Include="StoreConfigFallback.xml" />
+    </ItemGroup>
+    
+</Project>

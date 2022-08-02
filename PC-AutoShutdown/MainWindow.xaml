@@ -1,0 +1,122 @@
+﻿<Window x:Class="PC_AutoShutdown.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PC_AutoShutdown"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="330" Width="290">
+    
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,0,0,0">
+        
+        <ComboBox SelectionChanged="cb_storeSelect_SelectionChanged" x:Name="cb_storeSelect" Width="200" HorizontalAlignment="Center" Margin="0,10,0,5" />
+        
+        <Grid HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            
+            <Border BorderBrush="{x:Null}">
+                <TextBlock Margin="0,0,0,0" VerticalAlignment="Center">Monday:</TextBlock>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="0" BorderBrush="{x:Null}">
+                <TextBlock Margin="0,0,0,0" VerticalAlignment="Center">Tuesday:</TextBlock>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="0" BorderBrush="{x:Null}">
+                <TextBlock Margin="0,0,0,0" VerticalAlignment="Center">Wednesday:</TextBlock>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="0" BorderBrush="{x:Null}">
+                <TextBlock Margin="0,0,0,0" VerticalAlignment="Center">Thursday:</TextBlock>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="0" BorderBrush="{x:Null}">
+                <TextBlock Margin="0,0,0,0" VerticalAlignment="Center">Friday:</TextBlock>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="0" BorderBrush="{x:Null}">
+                <TextBlock Margin="0,0,0,0" VerticalAlignment="Center">Saturday:</TextBlock>
+            </Border>
+            <Border Grid.Row="6" Grid.Column="0" BorderBrush="{x:Null}">
+                <TextBlock Margin="0,0,0,0" VerticalAlignment="Center">Sunday:</TextBlock>
+            </Border>
+            
+            <Border Grid.Row="0" Grid.Column="1"  BorderBrush="{x:Null}">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0, 0, 0, 0">
+                    <TextBox x:Name="hh1" TextChanged="timeSelectors_TextChanged" PreviewTextInput="timeSelectors_NumberPreValidation" LostFocus="timeSelectors_FocusLost" Width="24" TextAlignment="Center" />
+                    <TextBlock Margin="2,0,2,0">:</TextBlock>
+                    <TextBox x:Name="mm1" TextChanged="timeSelectors_TextChanged" PreviewTextInput="timeSelectors_NumberPreValidation" LostFocus="timeSelectors_FocusLost" Width="24" TextAlignment="Center" />
+                    <TextBlock Margin="2,0,2,0">o'clock</TextBlock>
+                </StackPanel>
+            </Border>
+            
+            <Border Grid.Row="1" Grid.Column="1"  BorderBrush="{x:Null}">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0, 0, 0, 0">
+                    <TextBox x:Name="hh2" TextChanged="timeSelectors_TextChanged" PreviewTextInput="timeSelectors_NumberPreValidation" LostFocus="timeSelectors_FocusLost" Width="24" TextAlignment="Center" />
+                    <TextBlock Margin="2,0,2,0">:</TextBlock>
+                    <TextBox x:Name="mm2" TextChanged="timeSelectors_TextChanged" PreviewTextInput="timeSelectors_NumberPreValidation" LostFocus="timeSelectors_FocusLost" Width="24" TextAlignment="Center" />
+                    <TextBlock Margin="2,0,2,0">o'clock</TextBlock>
+                </StackPanel>
+            </Border>
+            
+            <Border Grid.Row="2" Grid.Column="1"  BorderBrush="{x:Null}">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0, 0, 0, 0">
+                    <TextBox x:Name="hh3" TextChanged="timeSelectors_TextChanged" PreviewTextInput="timeSelectors_NumberPreValidation" LostFocus="timeSelectors_FocusLost" Width="24" TextAlignment="Center" />
+                    <TextBlock Margin="2,0,2,0">:</TextBlock>
+                    <TextBox x:Name="mm3" TextChanged="timeSelectors_TextChanged" PreviewTextInput="timeSelectors_NumberPreValidation" LostFocus="timeSelectors_FocusLost" Width="24" TextAlignment="Center" />
+                    <TextBlock Margin="2,0,2,0">o'clock</TextBlock>
+                </StackPanel>
+            </Border>
+            
+            <Border Grid.Row="3" Grid.Column="1"  BorderBrush="{x:Null}">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0, 0, 0, 0">
+                    <TextBox x:Name="hh4" TextChanged="timeSelectors_TextChanged" PreviewTextInput="timeSelectors_NumberPreValidation" LostFocus="timeSelectors_FocusLost" Width="24" TextAlignment="Center" />
+                    <TextBlock Margin="2,0,2,0">:</TextBlock>
+                    <TextBox x:Name="mm4" TextChanged="timeSelectors_TextChanged" PreviewTextInput="timeSelectors_NumberPreValidation" LostFocus="timeSelectors_FocusLost" Width="24" TextAlignment="Center" />
+                    <TextBlock Margin="2,0,2,0">o'clock</TextBlock>
+                </StackPanel>
+            </Border>
+            
+            <Border Grid.Row="4" Grid.Column="1"  BorderBrush="{x:Null}">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0, 0, 0, 0">
+                    <TextBox x:Name="hh5" TextChanged="timeSelectors_TextChanged" PreviewTextInput="timeSelectors_NumberPreValidation" LostFocus="timeSelectors_FocusLost" Width="24" TextAlignment="Center" />
+                    <TextBlock Margin="2,0,2,0">:</TextBlock>
+                    <TextBox x:Name="mm5" TextChanged="timeSelectors_TextChanged" PreviewTextInput="timeSelectors_NumberPreValidation" LostFocus="timeSelectors_FocusLost" Width="24" TextAlignment="Center" />
+                    <TextBlock Margin="2,0,2,0">o'clock</TextBlock>
+                </StackPanel>
+            </Border>
+            
+            <Border Grid.Row="5" Grid.Column="1"  BorderBrush="{x:Null}">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0, 0, 0, 0">
+                    <TextBox x:Name="hh6" TextChanged="timeSelectors_TextChanged" PreviewTextInput="timeSelectors_NumberPreValidation" LostFocus="timeSelectors_FocusLost" Width="24" TextAlignment="Center" />
+                    <TextBlock Margin="2,0,2,0">:</TextBlock>
+                    <TextBox x:Name="mm6" TextChanged="timeSelectors_TextChanged" PreviewTextInput="timeSelectors_NumberPreValidation" LostFocus="timeSelectors_FocusLost" Width="24" TextAlignment="Center" />
+                    <TextBlock Margin="2,0,2,0">o'clock</TextBlock>
+                </StackPanel>
+            </Border>
+            
+            <Border Grid.Row="6" Grid.Column="1"  BorderBrush="{x:Null}">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0, 0, 0, 0">
+                    <TextBox x:Name="hh0" TextChanged="timeSelectors_TextChanged" PreviewTextInput="timeSelectors_NumberPreValidation" LostFocus="timeSelectors_FocusLost" Width="24" TextAlignment="Center" />
+                    <TextBlock Margin="2,0,2,0">:</TextBlock>
+                    <TextBox x:Name="mm0" TextChanged="timeSelectors_TextChanged" PreviewTextInput="timeSelectors_NumberPreValidation" LostFocus="timeSelectors_FocusLost" Width="24" TextAlignment="Center" />
+                    <TextBlock Margin="2,0,2,0">o'clock</TextBlock>
+                </StackPanel>
+            </Border>
+            
+        </Grid>
+        
+        <CheckBox x:Name="cb_shutdown" Checked="cb_ShutdownCheckboxChanged" Unchecked="cb_ShutdownCheckboxChanged" HorizontalAlignment="Center" Margin="0,10,0,0" Width="200">Activate AutoShutdown?</CheckBox>
+        <Button Click="btn_apply_Click" x:Name="btn_apply" HorizontalAlignment="Center" Width="200" Margin="0,10,0,10">Apply</Button>
+
+        <TextBlock x:Name="tb_statusInfo" Text="" TextAlignment="Center" Width="250" />
+
+    </StackPanel>
+</Window>
