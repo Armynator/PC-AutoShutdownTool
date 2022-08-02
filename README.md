@@ -30,7 +30,7 @@ If the checkbox is not ticked, all daily tasks (which were created by the tool) 
 ## Authors
 
 - Hannes Trebbin ([@Armynator](https://www.github.com/armynator))
-- Dominik Maccani [Niwasaka](https://github.com/arcanumartis)
+- Dominik Maccani ([Niwasaka](https://github.com/arcanumartis))
 
 Also credit to David Hall ([@dahall](https://github.com/dahall)) for creating the [Task Scheduler C# Wrapper](https://github.com/dahall/TaskScheduler).
 ## License
